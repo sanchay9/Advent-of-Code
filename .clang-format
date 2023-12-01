@@ -1,0 +1,13 @@
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+---
+Language: Cpp
+BasedOnStyle: Google
+IndentWidth: 4
+AlignArrayOfStructures: Left
+BinPackArguments: false
+BinPackParameters: false
+AllowShortLambdasOnASingleLine: Empty
+AccessModifierOffset: -4
+# InsertBraces: true
+ColumnLimit: 80
+...
