@@ -1,2 +1,2 @@
-# AdventOfCode2022
-My solutions for Advent of Code 2022 in C++
+# Advent of Code 🎄
+Personal repository for Advent of Code solutions written in C++20.
