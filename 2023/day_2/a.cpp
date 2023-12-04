@@ -14,7 +14,7 @@ int32_t main() {
             vector<int> rgb(3);
             do {
                 i += 2;
-                int cnt = stoi(s.substr(i, s.find(' ', i + 1) - i));
+                int cnt = stoll(s.substr(i, s.find(' ', i + 1) - i));
                 i = static_cast<int>(s.find(' ', i + 1)) + 1;
                 int start = i;
                 while (i < n && s[i] >= 'a' && s[i] <= 'z') ++i;
