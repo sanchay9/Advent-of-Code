@@ -1,0 +1,42 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define int int64_t
+
+int32_t main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    auto parse_history = [](string &s) -> vector<int> {
+        istringstream iss(s);
+        vector<int> a;
+        int n;
+        while (iss >> n) a.push_back(n);
+        return a;
+    };
+
+    auto next_value = [](vector<int> &a) -> int {
+        int ans = 0;
+        while (!all_of(a.begin(), a.end(), [](int x) {
+            return x == 0;
+        })) {
+            int n = static_cast<int>(a.size());
+            assert(n != 1);
+
+            ans += a.back();
+            vector<int> tmp;
+            for (int i = 1; i < n; i++) {
+                tmp.push_back(a[i] - a[i - 1]);
+            }
+            a = tmp;
+        }
+        return ans;
+    };
+
+    int ans = 0;
+    string line;
+    while (getline(cin, line)) {
+        vector<int> history = parse_history(line);
+        ans += next_value(history);
+    }
+    cout << ans << '\n';
+}
