@@ -1,3 +1,11 @@
 CompileFlags:
-  # Treat code as C++, use C++20 standard, enable more warnings.
-  Add: [-xc++, -std=c++20, -Wall, -Wno-missing-prototypes, -DLOCAL, -I/home/chi/code/include]
+  Add:
+    - -xc++
+    - -std=c++20
+    - -Wall
+    - -Wno-missing-prototypes
+    - -DLOCAL
+    - -I/home/sanchay/code/include
+    - -I/Users/sanchay.kumar/code/include
+Index:
+  Background: Skip
