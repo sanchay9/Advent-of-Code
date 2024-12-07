@@ -40,7 +40,8 @@ Checks: >
   -readability-implicit-bool-conversion,
   -google-build-using-namespace,
   -modernize-use-trailing-return-type,
-  -bugprone-easily-swappable-parameters
+  -bugprone-easily-swappable-parameters,
+  -misc-no-recursion
 
 
 CheckOptions:
