@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
 
@@ -28,7 +28,7 @@ int32_t main() {
 
                 bool ok = true;
                 for (int k = 1; k < 4; k++) {
-                    int ni = i + di * k, nj = j + dj * k;
+                    int ni = i + (di * k), nj = j + (dj * k);
 
                     if (ni >= 0 && ni < n && nj >= 0 && nj < m &&
                         G[ni][nj] == xmas[k]) {

@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
 
@@ -17,8 +17,6 @@ int32_t main() {
 
     const string mul_prefix = "mul(", mul_suffix = ")";
     const char mul_sep = ',';
-
-    const string do_ins = "do()", dont_ins = "don't()";
 
     int ans = 0;
 

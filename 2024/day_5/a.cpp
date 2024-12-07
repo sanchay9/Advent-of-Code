@@ -1,7 +1,4 @@
-#include <cctype>
-#include <iostream>
-#include <set>
-#include <sstream>
+#include <bits/stdc++.h>
 using namespace std;
 #define int int64_t
 
