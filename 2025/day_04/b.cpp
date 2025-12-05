@@ -51,16 +51,13 @@ int32_t main() {
         auto [i, j] = q.front();
         q.pop();
 
-        if (G[i][j] == '.') {
-            continue;
-        }
-
+        if (G[i][j] == '.') continue;
         G[i][j] = '.';
         ++ans;
 
         for (auto [di, dj] : directions) {
             int ni = i + di, nj = j + dj;
-            if (ni >= 0 && ni < n && nj >= 0 && nj < m && G[ni][nj] != '.') {
+            if (ni >= 0 && ni < n && nj >= 0 && nj < m && G[ni][nj] == '@') {
                 int cnt = 0;
                 for (auto [ddi, ddj] : directions) {
                     int nni = ni + ddi, nnj = nj + ddj;
